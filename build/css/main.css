@@ -18,6 +18,35 @@ body {
     height: 100%;
     box-sizing: border-box;
     border: 1px solid black; }
+    .wrapper .ad-container-style .background-style {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: 50% 50%; }
+    .wrapper .ad-container-style .logo-style {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      background-image: url(../assets/logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 999;
+      top: 20px;
+      left: 20px; }
+    .wrapper .ad-container-style .copy-container-style {
+      color: white;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      top: 350px; }
+      .wrapper .ad-container-style .copy-container-style .headline-container-style {
+        position: relative; }
+      .wrapper .ad-container-style .copy-container-style .summary-container-style {
+        position: relative; }
     .wrapper .ad-container-style .slide-container-style {
       position: absolute;
       width: 100%;
@@ -47,6 +76,28 @@ body {
         background-color: grey;
         cursor: pointer;
         pointer-events: auto; }
+    .wrapper .ad-container-style .button-container-style {
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      bottom: 100px;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      z-index: 200;
+      display: flex;
+      justify-content: space-evenly;
+      line-height: 30px; }
+      .wrapper .ad-container-style .button-container-style .ad-to-cart-style {
+        position: relative;
+        width: 130px;
+        height: 30px;
+        border: 1px solid white; }
+      .wrapper .ad-container-style .button-container-style .find-store-style {
+        position: relative;
+        width: 130px;
+        height: 30px;
+        border: 1px solid white; }
 
 #slide-1 {
   background-color: pink; }

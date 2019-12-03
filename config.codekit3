@@ -9,6 +9,17 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/app/assets/logo.png": {
+		"ft": 32768,
+		"iS": 21471,
+		"oA": 0,
+		"oAP": "/build/assets/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/index.html": {
 		"cB": 0,
 		"ft": 8192,
