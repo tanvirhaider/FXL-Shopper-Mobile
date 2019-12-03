@@ -1,26 +1,14 @@
 
 
 
-var numberOfitem = 4;
+var numberOfitem = 3;
 var currentSlideHDepth = 1;
+var allNests = ["nav","slide","headline","summary","ad-to-cart","find-store"];
 
 
 function init () {
 
-    if (numberOfitem < 5) {
-        for (var i = 5; i > numberOfitem; i--) {
-            console.log(i);
-            document.getElementById("nav-" + i).remove();
-            document.getElementById("slide-" + i).remove();
-            document.getElementById("headline-" + i).remove();
-            document.getElementById("summary-" + i).remove();
-            document.getElementById("ad-to-cart-" + i).remove();
-            document.getElementById("find-store-" + i).remove();
-        }
-
-        //document.getElementById("my-element").remove();
-
-    }
+    if (numberOfitem < 5) {for (var i = 5; i > numberOfitem; i--) {for (var j = 0; j < allNests.length; j++) { document.getElementById(allNests[j] + "-" + i).remove(); }}}
 
     for (var i = 1; i <= numberOfitem; i++) {
         var tempNavItem = document.getElementById("nav-" + i);
