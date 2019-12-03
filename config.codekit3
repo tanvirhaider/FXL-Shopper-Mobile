@@ -12,9 +12,9 @@
 	"/app/index.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/index.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/app/js/main.js": {
 		"ft": 64,
@@ -2047,7 +2047,7 @@
 	"languageDefaultsUserDefined": [
 		],
 	"overrideExternalServerCSS": 0,
-	"previewPathAddition": "",
+	"previewPathAddition": "/build",
 	"skippedFoldersString": "_cache,cache,.idea,log,_logs,logs,node_modules,/storage/framework/sessions,dist",
 	"sourceFolderName": "app",
 	"susyVersion": 3,
