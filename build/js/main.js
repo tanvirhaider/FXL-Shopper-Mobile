@@ -8,13 +8,20 @@ var defaultIndex = 1;
 var device = "desktop"; // "mobile", "desktop"
 var deviceHeight; 
 var deviceWidth;
+var DEBUG = true;
 
 var ETLink =
-		"https://et.nytimes.com/?subject=dfp-ad-events&dfp_creativeid=%ecid!&dfp_lineitemid=%eaid!&dfp_orderid=%ebuy!&dfp_viewport=%%PATTERN:vp%%&pageviewid=%%PATTERN:page_view_id%%&dfp_pos=%%PATTERN:pos%%&dfp_prop=%%PATTERN:prop%%";
+        "https://et.nytimes.com/?subject=dfp-ad-events&dfp_creativeid=%ecid!&dfp_lineitemid=%eaid!&dfp_orderid=%ebuy!&dfp_viewport=%%PATTERN:vp%%&pageviewid=%%PATTERN:page_view_id%%&dfp_pos=%%PATTERN:pos%%&dfp_prop=%%PATTERN:prop%%";
+        
+// -------- end of global variables
 
+
+// -------- ET tracking functions -----------------
+// ------------------------------------------------
+// ------------------------------------------------
 
 function productTracking (type, curr) {
-    console.log("ETSlideCall: ", type, curr);
+    if (DEBUG) {console.log("ETSlideCall: ", type, curr);}
     var trackingLink = ETLink + "&dfp_event_type=" + type + "&dfp_event_location=product-" + curr;
     try { document.createElement("img").src = trackingLink; } catch (Error) {}
 };
@@ -46,11 +53,16 @@ function clickThroughTracking (type, curr) {
     } catch (Error) {}
 }
 
+// -------- End of ET tracking ---------------------
+
+
+
+// -------- FLEX XL MOBILE FULL SCREEN CODE --------
+// -------------------------------------------------
+// -------------------------------------------------
+
 
 function FullScreenTheUnitPlease () {
-
- // console.log("set the stage yo");
-
   var adContainer = document.getElementById("wrapper");
   var adBody = document.getElementsByTagName("BODY")[0];
 
@@ -61,8 +73,11 @@ function FullScreenTheUnitPlease () {
 
     if (deviceHeight < 600) {deviceHeight = 568;}
     
-   // console.log("device width: ",deviceWidth);
-   // console.log("device height: ",deviceHeight);
+    if (DEBUG) {
+        console.log("device width: ",deviceWidth);
+        console.log("device height: ",deviceHeight);
+    }
+  
 
     adBody.style.height = deviceHeight + "px";
     adBody.style.width = deviceWidth + "px";
@@ -70,7 +85,9 @@ function FullScreenTheUnitPlease () {
     adContainer.style.width = deviceWidth + "px";
 
     var w = window, sf = w["$sf"], ext = sf && sf.ext;
-    if (ext) {ext.expand({l:deviceWidth,t:deviceHeight});} else {console.log("SF api expansion is not supporting");}
+    if (ext) {ext.expand({l:deviceWidth,t:deviceHeight});} else {
+        if (DEBUG) { console.log("SF api expansion is not supporting"); }
+    }
  
   }
   
@@ -98,6 +115,12 @@ if (window.device == "mobile") {
 	var myStop = setInterval(stopTheFunc, 100); 
 }
 
+// ------------ END OF FULL SCREEN CODE --------------
+
+
+// ------------ starter function ---------------------
+// ---------------------------------------------------
+// ---------------------------------------------------
 
 (function(){
 
@@ -110,6 +133,13 @@ if (window.device == "mobile") {
         var tempNavItem = document.getElementById("nav-" + i);
         tempNavItem.setAttribute('data-index-number', i);
         tempNavItem.addEventListener("click",function() {updateSlide (event.target.dataset.indexNumber);})
+
+        try {
+            var tempSlide = document.getElementById("slide-" + i);
+            tempSlide.setAttribute('data-index-number', i);
+            tempSlide.addEventListener("click",function() {openCart (event.target.dataset.indexNumber,event.target.dataset.url);})
+        }
+        catch (Error) {}
 
         try {
             var tempCart = document.getElementById("ad-to-cart-" + i);
@@ -138,12 +168,12 @@ if (window.device == "mobile") {
     }
 
     function openCart (whichOne,whichURL) {
-        console.log(whichOne);
+        if (DEBUG) {console.log("index: ",whichOne, "  url: ", whichURL);}
         clickThroughTracking ('clickURL', 'cart-' + whichOne, whichURL);
     }
 
     function openStore (whichOne,whichURL) {
-        console.log(whichOne);
+        if (DEBUG) {console.log("index: ",whichOne, "  url: ", whichURL);}
         clickThroughTracking ('clickURL', 'store-' + whichOne, whichURL);
     }
 
@@ -171,4 +201,5 @@ if (window.device == "mobile") {
 
 })();
 
+// -------- end of starter function -----------------
 
