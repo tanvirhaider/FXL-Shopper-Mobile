@@ -4,6 +4,10 @@ var numberOfitem = 4;
 var currentSlideHDepth = 1;
 var allNests = ["nav","slide","headline","summary","ad-to-cart","find-store"];
 var defaultIndex = 1;
+var device = "desktop"; // "mobile", "desktop"
+var clickthroughurllist = [
+    ''
+]
 
 var ETLink =
 		"https://et.nytimes.com/?subject=dfp-ad-events&dfp_creativeid=%ecid!&dfp_lineitemid=%eaid!&dfp_orderid=%ebuy!&dfp_viewport=%%PATTERN:vp%%&pageviewid=%%PATTERN:page_view_id%%&dfp_pos=%%PATTERN:pos%%&dfp_prop=%%PATTERN:prop%%";
@@ -45,6 +49,63 @@ function clickThroughTracking (type, curr) {
 }
 
 
+var deviceHeight; 
+var deviceWidth;
+
+function FullScreenTheUnitPlease () {
+
+ // console.log("set the stage yo");
+
+  var adContainer = document.getElementById("wrapper");
+  var adBody = document.getElementsByTagName("BODY")[0];
+
+  if (window["$sf"]) {
+    var SFGeom = $sf.ext.geom();
+    deviceHeight = SFGeom.win.h;
+    deviceWidth = SFGeom.win.w;
+
+    if (deviceHeight < 600) {deviceHeight = 568;}
+    
+   // console.log("device width: ",deviceWidth);
+   // console.log("device height: ",deviceHeight);
+
+    adBody.style.height = deviceHeight + "px";
+    adBody.style.width = deviceWidth + "px";
+    adContainer.style.height = deviceHeight + "px";
+    adContainer.style.width = deviceWidth + "px";
+
+    var w = window, sf = w["$sf"], ext = sf && sf.ext;
+    if (ext) {ext.expand({l:deviceWidth,t:deviceHeight});} else {console.log("SF api expansion is not supporting");}
+ 
+  }
+  
+  else {
+    adContainer.style.height = 600 + "px";
+    adContainer.style.width = window.innerWidth + "px";
+    adBody.style.height = 600 + "px";
+    adBody.style.width = window.innerWidth + "px";
+  }
+
+}
+
+
+function myStopFunction() {
+	//console.log("stop it ...... ");
+	if (deviceWidth >= 350 ) {
+		clearInterval(myStop)
+		clearInterval(setStage)
+		//  console.log("setStage cleared")
+		//  console.log("myStop cleared")
+	}
+}
+
+if (window.device == "mobile") {
+	var setStage = setInterval(FullScreenTheUnitPlease, 100); 
+	var myStop = setInterval(myStopFunction, 100); 
+}
+
+
+
 function init () {
 
     if (numberOfitem < 5) {for (var i = 5; i > numberOfitem; i--) {for (var j = 0; j < allNests.length; j++) { document.getElementById(allNests[j] + "-" + i).remove(); }}}
@@ -82,10 +143,12 @@ function init () {
 
     function openCart (whichOne) {
         console.log(whichOne);
+        clickThroughTracking ('clickURL', 'cart-' + whichOne, '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');
     }
 
     function openStore (whichOne) {
         console.log(whichOne);
+        clickThroughTracking ('clickURL', 'store-' + whichOne, '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');
     }
 
     function updateSlide (whichOne) {
