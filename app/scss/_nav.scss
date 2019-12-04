@@ -1,0 +1,30 @@
+
+
+  .nav-container-style {
+    position: absolute;
+    width: 70%;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 200px;
+   
+
+    .nav-style {
+        position: relative;
+        height: 100%;
+        width: 40px;
+        background-color: grey;
+        cursor: pointer;
+		pointer-events: auto;
+		box-sizing: border-box;
+	}
+	
+	.nav-selected-style {
+		border: 2px solid black;
+	}
+}

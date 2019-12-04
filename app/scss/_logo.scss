@@ -1,0 +1,13 @@
+
+
+ .logo-style {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-image: url(../assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+    top: 20px;
+    left: 20px;
+}

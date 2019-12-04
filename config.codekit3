@@ -27,6 +27,16 @@
 		"oAP": "/build/index.html",
 		"oF": 1
 		},
+	"/app/js/dfp-native-tracking.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/dfp-native-tracking-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/app/js/main.js": {
 		"ft": 64,
 		"ma": 0,
@@ -36,6 +46,84 @@
 		"oF": 2,
 		"sC": 3,
 		"tS": 0
+		},
+	"/app/scss/_background.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_background.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_copy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_copy.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_logo.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_logo.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_nav.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_nav.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_slide.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_slide.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/app/scss/main.scss": {
 		"aP": 1,

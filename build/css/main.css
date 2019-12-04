@@ -75,7 +75,10 @@ body {
         width: 40px;
         background-color: grey;
         cursor: pointer;
-        pointer-events: auto; }
+        pointer-events: auto;
+        box-sizing: border-box; }
+      .wrapper .ad-container-style .nav-container-style .nav-selected-style {
+        border: 2px solid black; }
     .wrapper .ad-container-style .button-container-style {
       position: absolute;
       width: 100%;
@@ -92,12 +95,22 @@ body {
         position: relative;
         width: 130px;
         height: 30px;
-        border: 1px solid white; }
+        border: 1px solid white;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        cursor: pointer; }
       .wrapper .ad-container-style .button-container-style .find-store-style {
         position: relative;
         width: 130px;
         height: 30px;
-        border: 1px solid white; }
+        border: 1px solid white;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        cursor: pointer; }
 
 #slide-1 {
   background-color: pink; }

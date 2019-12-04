@@ -21,120 +21,18 @@ body {
 
 
     .ad-container-style {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
-        border: 1px solid black;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		border: 1px solid black;
 
-        .background-style {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: 50% 50%;
-        }
-
-        .logo-style {
-            position: absolute;
-            width: 100px;
-            height: 40px;
-            background-image: url(../assets/logo.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            z-index: 999;
-            top: 20px;
-            left: 20px;
-        }
-
-        .copy-container-style {
-            color: white;
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            z-index: 999;
-            display: flex;
-            flex-direction: column;
-            top: 350px;
-
-            .headline-container-style {
-                position: relative;
-            }
-
-            .summary-container-style {
-                position: relative
-            }
-
-
-        }
-
-
-        .slide-container-style {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-
-            .slide-style {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                z-index: 1;
-            }
-        }
-
-        .nav-container-style {
-            position: absolute;
-            width: 70%;
-            left: 0px;
-            right: 0px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 40px;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-evenly;
-            bottom: 200px;
-           
-
-            .nav-style {
-                position: relative;
-                height: 100%;
-                width: 40px;
-                background-color: grey;
-                cursor: pointer;
-                pointer-events: auto;
-            }
-        }
-
-        .button-container-style {
-            position: absolute;
-            width: 100%;
-            height: 40px;
-            bottom: 100px;
-            color: white;
-            font-size: 12px;
-            text-align: center;
-            z-index: 200;
-            display: flex;
-            justify-content: space-evenly;
-            line-height: 30px;
-
-            .ad-to-cart-style{
-                position: relative;
-                width: 130px;
-                height: 30px;
-                border: 1px solid white;
-
-            }
-
-            .find-store-style {
-                position: relative;
-                width: 130px;
-                height: 30px;
-                border: 1px solid white;
-            }
-        }
+		@import 'background';
+		@import 'logo';
+		@import 'copy';
+		@import 'slide';
+		@import 'nav';
+		@import 'buttons';
     }
 
    

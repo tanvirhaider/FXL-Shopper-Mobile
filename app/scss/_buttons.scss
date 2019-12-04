@@ -1,0 +1,34 @@
+
+
+  .button-container-style {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 100px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    z-index: 200;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 30px;
+
+    .ad-to-cart-style{
+        position: relative;
+        width: 130px;
+        height: 30px;
+        border: 1px solid white;
+        user-select: none;
+        cursor: pointer;
+
+    }
+
+    .find-store-style {
+        position: relative;
+        width: 130px;
+        height: 30px;
+        border: 1px solid white;
+        user-select: none;
+        cursor: pointer;
+    }
+}
