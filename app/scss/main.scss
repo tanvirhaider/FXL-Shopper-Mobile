@@ -1,5 +1,7 @@
 
 
+@import 'fonts';
+
 
 body {
     margin: 0px;
@@ -32,7 +34,8 @@ body {
 		@import 'copy';
 		@import 'slide';
 		@import 'nav';
-		@import 'buttons';
+        @import 'buttons';
+        
     }
 
    

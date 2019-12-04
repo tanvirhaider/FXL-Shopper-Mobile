@@ -1,17 +1,16 @@
 
+// ------- GLOBAL VARS --------------
 
 var numberOfitem = 4;
 var currentSlideHDepth = 1;
 var allNests = ["nav","slide","headline","summary","ad-to-cart","find-store"];
 var defaultIndex = 1;
 var device = "desktop"; // "mobile", "desktop"
-var clickthroughurllist = [
-    ''
-]
+var deviceHeight; 
+var deviceWidth;
 
 var ETLink =
 		"https://et.nytimes.com/?subject=dfp-ad-events&dfp_creativeid=%ecid!&dfp_lineitemid=%eaid!&dfp_orderid=%ebuy!&dfp_viewport=%%PATTERN:vp%%&pageviewid=%%PATTERN:page_view_id%%&dfp_pos=%%PATTERN:pos%%&dfp_prop=%%PATTERN:prop%%";
-
 
 
 function productTracking (type, curr) {
@@ -19,7 +18,6 @@ function productTracking (type, curr) {
     var trackingLink = ETLink + "&dfp_event_type=" + type + "&dfp_event_location=product-" + curr;
     try { document.createElement("img").src = trackingLink; } catch (Error) {}
 };
-
 
 
 function clickThroughTracking (type, curr) {
@@ -48,9 +46,6 @@ function clickThroughTracking (type, curr) {
     } catch (Error) {}
 }
 
-
-var deviceHeight; 
-var deviceWidth;
 
 function FullScreenTheUnitPlease () {
 
@@ -85,11 +80,10 @@ function FullScreenTheUnitPlease () {
     adBody.style.height = 600 + "px";
     adBody.style.width = window.innerWidth + "px";
   }
-
 }
 
 
-function myStopFunction() {
+function stopTheFunc() {
 	//console.log("stop it ...... ");
 	if (deviceWidth >= 350 ) {
 		clearInterval(myStop)
@@ -101,12 +95,14 @@ function myStopFunction() {
 
 if (window.device == "mobile") {
 	var setStage = setInterval(FullScreenTheUnitPlease, 100); 
-	var myStop = setInterval(myStopFunction, 100); 
+	var myStop = setInterval(stopTheFunc, 100); 
 }
 
 
+(function(){
 
-function init () {
+    var logo = document.getElementById("logo");
+    logo.addEventListener("click",function() {  clickThroughTracking('clickURL', 'logo', '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');  })
 
     if (numberOfitem < 5) {for (var i = 5; i > numberOfitem; i--) {for (var j = 0; j < allNests.length; j++) { document.getElementById(allNests[j] + "-" + i).remove(); }}}
 
@@ -118,14 +114,14 @@ function init () {
         try {
             var tempCart = document.getElementById("ad-to-cart-" + i);
             tempCart.setAttribute('data-index-number', i);
-            tempCart.addEventListener("click",function() {openCart (event.target.dataset.indexNumber);})
+            tempCart.addEventListener("click",function() {openCart (event.target.dataset.indexNumber,event.target.dataset.url);})
         }
         catch (Error) {}
 
         try {
             var tempStore = document.getElementById("find-store-" + i);
             tempStore.setAttribute('data-index-number', i);
-            tempStore.addEventListener("click",function() {openStore (event.target.dataset.indexNumber);})
+            tempStore.addEventListener("click",function() {openStore (event.target.dataset.indexNumber,event.target.dataset.url);})
         }
         catch (Error) {}
        
@@ -141,14 +137,14 @@ function init () {
         productTracking ("product",whichOne);
     }
 
-    function openCart (whichOne) {
+    function openCart (whichOne,whichURL) {
         console.log(whichOne);
-        clickThroughTracking ('clickURL', 'cart-' + whichOne, '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');
+        clickThroughTracking ('clickURL', 'cart-' + whichOne, whichURL);
     }
 
-    function openStore (whichOne) {
+    function openStore (whichOne,whichURL) {
         console.log(whichOne);
-        clickThroughTracking ('clickURL', 'store-' + whichOne, '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');
+        clickThroughTracking ('clickURL', 'store-' + whichOne, whichURL);
     }
 
     function updateSlide (whichOne) {
@@ -173,11 +169,6 @@ function init () {
 
     updateSlide (defaultIndex);
 
-}
+})();
 
 
-init ();
-
-//  eventTracker.generalEventTrack('clickURL', 'background', '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');
-//  try {eventTracker.prevSlideET();} catch (Error) {}
-//  try {eventTracker.nextSlideET();} catch (Error) {}

@@ -86,6 +86,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/app/scss/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/app/scss/_logo.scss": {
 		"aP": 0,
 		"bl": 0,

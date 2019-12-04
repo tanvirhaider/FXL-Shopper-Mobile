@@ -10,12 +10,17 @@
     flex-direction: column;
     top: 350px;
 
+
     .headline-container-style {
         position: relative;
+        font-family: "Proxima N W02 Bold";
+        user-select: none;
     }
 
     .summary-container-style {
-        position: relative
+        position: relative;
+        font-family: "Proxima N W01 Reg";
+        user-select: none;
     }
 
 
