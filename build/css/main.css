@@ -180,43 +180,41 @@ body {
     .wrapper-style .ad-container-style .button-container-style {
       position: absolute;
       width: 100%;
-      height: 30px;
+      height: 35px;
       bottom: 30px;
       color: #606060;
-      font-size: 12px;
-      text-align: center;
       z-index: 200;
       display: flex;
-      justify-content: space-evenly;
-      line-height: 30px;
-      font-family: "Proxima N W02 Smbd"; }
-      .wrapper-style .ad-container-style .button-container-style .ad-to-cart-container-style {
-        width: auto;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto; }
-        .wrapper-style .ad-container-style .button-container-style .ad-to-cart-container-style .ad-to-cart-style {
+      justify-content: space-evenly; }
+      .wrapper-style .ad-container-style .button-container-style .button-set-style {
+        display: flex;
+        line-height: 30px;
+        font-family: "Proxima N W02 Smbd";
+        font-size: 12px;
+        text-align: center; }
+        .wrapper-style .ad-container-style .button-container-style .button-set-style .ad-to-cart-style {
           position: relative;
-          width: 130px;
-          height: 30px;
+          width: auto;
+          height: auto;
           border: 1px solid #7b7b7b;
           -webkit-user-select: none;
              -moz-user-select: none;
               -ms-user-select: none;
                   user-select: none;
-          cursor: pointer; }
-      .wrapper-style .ad-container-style .button-container-style .find-store-container-style {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative; }
-        .wrapper-style .ad-container-style .button-container-style .find-store-container-style .find-store-style {
+          cursor: pointer;
+          padding: 2px 20px;
+          margin-left: 10px;
+          margin-right: 10px; }
+        .wrapper-style .ad-container-style .button-container-style .button-set-style .find-store-style {
           position: relative;
-          width: 130px;
-          height: 30px;
+          width: auto;
+          height: auto;
           border: 1px solid #787878;
           -webkit-user-select: none;
              -moz-user-select: none;
               -ms-user-select: none;
                   user-select: none;
-          cursor: pointer; }
+          cursor: pointer;
+          padding: 2px 20px;
+          margin-left: 10px;
+          margin-right: 10px; }

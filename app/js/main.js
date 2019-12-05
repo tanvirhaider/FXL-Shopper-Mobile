@@ -169,7 +169,7 @@ if (window.device == "mobile") {
             }
             else {
                 console.log(tempCart);
-                tempCart.remove();
+                tempCart.style.display = "none";
         
             }
            
@@ -178,8 +178,15 @@ if (window.device == "mobile") {
 
         try {
             var tempStore = document.getElementById("find-store-" + i);
-            tempStore.setAttribute('data-index-number', i);
-            tempStore.addEventListener("click",function() {openStore (event.target.dataset.indexNumber,event.target.dataset.url);})
+            if (tempStore.innerHTML != "") {
+                tempStore.setAttribute('data-index-number', i);
+                tempStore.addEventListener("click",function() {openStore (event.target.dataset.indexNumber,event.target.dataset.url);})
+            }
+            else {
+                console.log(tempStore);
+                tempStore.style.display = "none";
+            }
+           
         }
         catch (Error) {}
        
@@ -211,16 +218,16 @@ if (window.device == "mobile") {
             if (i == whichOne) {
                 try { document.getElementById("headline-" + i).style.display = "block"; } catch(Error) {}
                 try { document.getElementById("summary-" + i).style.display = "block"; } catch(Error) {}
-                try { document.getElementById("ad-to-cart-" + i).style.display = "block"; } catch(Error) {}
-                try { document.getElementById("find-store-" + i).style.display = "block"; } catch(Error) {}
+                try { document.getElementById("button-set-" + i).style.display = "flex"; } catch(Error) {}
+               // try { document.getElementById("find-store-" + i).style.display = "block"; } catch(Error) {}
                 try { document.getElementById("slide-" + i).style.display = "block"; } catch(Error) {}
             }
             else {
 
                 try { document.getElementById("headline-" + i).style.display = "none"; } catch(Error) {}
                 try { document.getElementById("summary-" + i).style.display = "none"; } catch(Error) {}
-                try { document.getElementById("ad-to-cart-" + i).style.display = "none"; } catch(Error) {}
-                try { document.getElementById("find-store-" + i).style.display = "none"; } catch(Error) {}
+                try { document.getElementById("button-set-" + i).style.display = "none"; } catch(Error) {}
+                //try { document.getElementById("find-store-" + i).style.display = "none"; } catch(Error) {}
                 try { document.getElementById("slide-" + i).style.display = "none";} catch(Error) {}
   
             }
