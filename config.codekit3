@@ -20,6 +20,61 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/app/assets/p1.jpg": {
+		"ft": 16384,
+		"iS": 32916,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/p1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/p2.jpg": {
+		"ft": 16384,
+		"iS": 33436,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/p2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/p3.jpg": {
+		"ft": 16384,
+		"iS": 35728,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/p3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/p4.jpg": {
+		"ft": 16384,
+		"iS": 44957,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/p4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/p5.jpg": {
+		"ft": 16384,
+		"iS": 69220,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/p5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/app/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -170,8 +225,8 @@
 	},
 "projectAttributes": {
 	"creationDate": 597081470.852525,
-	"displayValue": "ad-files",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "FXL-shopper",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-grumpy",
 	"iconImageWasSetByUser": 0
 	},

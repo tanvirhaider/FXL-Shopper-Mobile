@@ -20,6 +20,36 @@
         height: 100%;
         z-index: 1;
         cursor: pointer;
-        pointer-events: auto;
+		pointer-events: auto;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
     }
+
+	#slide-1 {
+		// background-color: pink;
+		background-image: url(../assets/p1.jpg);
+	}
+
+	#slide-2 {
+		// background-color: rgb(174, 35, 59);
+		background-image: url(../assets/p2.jpg);
+	}
+
+	#slide-3 {
+		// background-color: rgb(130, 130, 130);
+		background-image: url(../assets/p3.jpg);
+	}
+
+	#slide-4 {
+		//  background-color: rgb(34, 46, 135);
+		background-image: url(../assets/p4.jpg);
+	}
+
+	#slide-5 {
+		// background-color: rgb(41, 130, 29);
+		background-image: url(../assets/p5.jpg);
+	}
+   
 }
+
