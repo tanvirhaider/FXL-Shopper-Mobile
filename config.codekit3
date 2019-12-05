@@ -20,6 +20,61 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/app/assets/nav-1.jpg": {
+		"ft": 16384,
+		"iS": 1476,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/nav-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/nav-2.jpg": {
+		"ft": 16384,
+		"iS": 2173,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/nav-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/nav-3.jpg": {
+		"ft": 16384,
+		"iS": 2517,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/nav-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/nav-4.jpg": {
+		"ft": 16384,
+		"iS": 1933,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/nav-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/nav-5.jpg": {
+		"ft": 16384,
+		"iS": 2176,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/nav-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/app/assets/p1.jpg": {
 		"ft": 16384,
 		"iS": 32916,
@@ -150,6 +205,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/scss/_fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_gradient.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_gradient.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

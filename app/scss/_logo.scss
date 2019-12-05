@@ -2,13 +2,14 @@
 
  .logo-style {
     position: absolute;
-    width: 100px;
-    height: 40px;
+    width: 100%;
+    height: 45px;
     background-image: url(../assets/logo.png);
+    background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 999;
+    z-index: 2000;
     top: 20px;
-    left: 20px;
+    left: 0px;
     cursor: pointer;
 }

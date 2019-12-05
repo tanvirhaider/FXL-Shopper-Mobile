@@ -1,14 +1,16 @@
 
 // ------- GLOBAL VARS --------------
 
-var numberOfitem = 4;
-var currentSlideHDepth = 1;
+var numberOfitem = 5;
+//var currentSlideHDepth = 1;
 var allNests = ["nav","slide","headline","summary","ad-to-cart","find-store"];
 var defaultIndex = 1;
 var device = "desktop"; // "mobile", "desktop"
 var deviceHeight; 
 var deviceWidth;
 var DEBUG = true;
+var navposition = "bottom";  // "top", "bottom"
+var gradientToggle = "hidden"; // "visible", "hidden";
 
 var ETLink =
         "https://et.nytimes.com/?subject=dfp-ad-events&dfp_creativeid=%ecid!&dfp_lineitemid=%eaid!&dfp_orderid=%ebuy!&dfp_viewport=%%PATTERN:vp%%&pageviewid=%%PATTERN:page_view_id%%&dfp_pos=%%PATTERN:pos%%&dfp_prop=%%PATTERN:prop%%";
@@ -125,9 +127,27 @@ if (window.device == "mobile") {
 (function(){
 
     var logo = document.getElementById("logo");
-    logo.addEventListener("click",function() {  clickThroughTracking('clickURL', 'logo', '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');  })
+    logo.addEventListener("click",function() {  clickThroughTracking('clickURL', 'logo', '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');  });
+
+    var navContainer = document.getElementById("nav-container");
+    navContainer.classList.add("nav-" + navposition);
+
+    var copyContainer = document.getElementById("copy-container");
+    copyContainer.classList.add("copy-position-" + navposition);
+
+    var slideContainer = document.getElementById("slide-container");
+    slideContainer.classList.add("slide-position-" + navposition);
+
+    var gradient = document.getElementById("gradient");
+    gradient.style.visibility = gradientToggle;
+
+    var background = document.getElementById("background");
+    background.addEventListener("click",function() {  clickThroughTracking('clickURL', 'background', '%%CLICK_URL_UNESC%%%%DEST_URL_UNESC%%');  });
+  
 
     if (numberOfitem < 5) {for (var i = 5; i > numberOfitem; i--) {for (var j = 0; j < allNests.length; j++) { document.getElementById(allNests[j] + "-" + i).remove(); }}}
+
+
 
     for (var i = 1; i <= numberOfitem; i++) {
         var tempNavItem = document.getElementById("nav-" + i);
@@ -143,8 +163,16 @@ if (window.device == "mobile") {
 
         try {
             var tempCart = document.getElementById("ad-to-cart-" + i);
-            tempCart.setAttribute('data-index-number', i);
-            tempCart.addEventListener("click",function() {openCart (event.target.dataset.indexNumber,event.target.dataset.url);})
+            if (tempCart.innerHTML != "") {
+                tempCart.setAttribute('data-index-number', i);
+                tempCart.addEventListener("click",function() {openCart (event.target.dataset.indexNumber,event.target.dataset.url);})
+            }
+            else {
+                console.log(tempCart);
+                tempCart.remove();
+        
+            }
+           
         }
         catch (Error) {}
 
@@ -181,18 +209,20 @@ if (window.device == "mobile") {
         navSelected (whichOne);
         for (var i = 1; i <= numberOfitem; i++) {
             if (i == whichOne) {
-                document.getElementById("headline-" + i).style.display = "block";
-                document.getElementById("summary-" + i).style.display = "block";
-                document.getElementById("ad-to-cart-" + i).style.display = "block";
-                document.getElementById("find-store-" + i).style.display = "block";
-                document.getElementById("slide-" + i).style.display = "block";
+                try { document.getElementById("headline-" + i).style.display = "block"; } catch(Error) {}
+                try { document.getElementById("summary-" + i).style.display = "block"; } catch(Error) {}
+                try { document.getElementById("ad-to-cart-" + i).style.display = "block"; } catch(Error) {}
+                try { document.getElementById("find-store-" + i).style.display = "block"; } catch(Error) {}
+                try { document.getElementById("slide-" + i).style.display = "block"; } catch(Error) {}
             }
             else {
-                document.getElementById("headline-" + i).style.display = "none";
-                document.getElementById("summary-" + i).style.display = "none";
-                document.getElementById("ad-to-cart-" + i).style.display = "none";
-                document.getElementById("find-store-" + i).style.display = "none";
-                document.getElementById("slide-" + i).style.display = "none";
+
+                try { document.getElementById("headline-" + i).style.display = "none"; } catch(Error) {}
+                try { document.getElementById("summary-" + i).style.display = "none"; } catch(Error) {}
+                try { document.getElementById("ad-to-cart-" + i).style.display = "none"; } catch(Error) {}
+                try { document.getElementById("find-store-" + i).style.display = "none"; } catch(Error) {}
+                try { document.getElementById("slide-" + i).style.display = "none";} catch(Error) {}
+  
             }
         }
     }

@@ -10,7 +10,7 @@ body {
 
 
 
-.wrapper {
+.wrapper-style {
     position: absolute;
     max-width: 420px;
     max-height: 824px;
@@ -29,7 +29,8 @@ body {
 		box-sizing: border-box;
 		border: 1px solid black;
 
-		@import 'background';
+        @import 'background';
+        @import 'gradient';
 		@import 'logo';
 		@import 'copy';
 		@import 'slide';

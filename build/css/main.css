@@ -22,7 +22,7 @@ body {
   margin: 0px;
   padding: 0px; }
 
-.wrapper {
+.wrapper-style {
   position: absolute;
   max-width: 420px;
   max-height: 824px;
@@ -32,55 +32,74 @@ body {
   right: 0px;
   margin-left: auto;
   margin-right: auto; }
-  .wrapper .ad-container-style {
+  .wrapper-style .ad-container-style {
     position: absolute;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     border: 1px solid black; }
-    .wrapper .ad-container-style .background-style {
+    .wrapper-style .ad-container-style .background-style {
       position: absolute;
       width: 100%;
       height: 100%;
       background-size: cover;
       background-position: 50% 50%;
-      background-color: darkgray; }
-    .wrapper .ad-container-style .logo-style {
+      background-color: white; }
+    .wrapper-style .ad-container-style .gradient-style {
       position: absolute;
-      width: 100px;
-      height: 40px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.2) 100%);
+      pointer-events: none;
+      z-index: 1000; }
+    .wrapper-style .ad-container-style .logo-style {
+      position: absolute;
+      width: 100%;
+      height: 45px;
       background-image: url(../assets/logo.png);
+      background-position: 50% 50%;
       background-size: contain;
       background-repeat: no-repeat;
-      z-index: 999;
+      z-index: 2000;
       top: 20px;
-      left: 20px;
+      left: 0px;
       cursor: pointer; }
-    .wrapper .ad-container-style .copy-container-style {
-      color: white;
+    .wrapper-style .ad-container-style .copy-container-style {
+      color: #3f3f3f;
       position: absolute;
       width: 100%;
       text-align: center;
       z-index: 999;
       display: flex;
       flex-direction: column;
-      top: 350px;
       pointer-events: none; }
-      .wrapper .ad-container-style .copy-container-style .headline-container-style {
+      .wrapper-style .ad-container-style .copy-container-style .headline-container-style {
         position: relative;
         font-family: "Proxima N W02 Bold";
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;
-                user-select: none; }
-      .wrapper .ad-container-style .copy-container-style .summary-container-style {
+                user-select: none;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px; }
+      .wrapper-style .ad-container-style .copy-container-style .summary-container-style {
         position: relative;
         font-family: "Proxima N W01 Reg";
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;
-                user-select: none; }
-    .wrapper .ad-container-style .slide-container-style {
+                user-select: none;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px; }
+    .wrapper-style .ad-container-style .copy-position-top {
+      bottom: 100px; }
+    .wrapper-style .ad-container-style .copy-position-bottom {
+      bottom: 170px; }
+    .wrapper-style .ad-container-style .slide-container-style {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -90,9 +109,8 @@ body {
       left: 0px;
       right: 0px;
       margin-left: auto;
-      margin-right: auto;
-      top: 100px; }
-      .wrapper .ad-container-style .slide-container-style .slide-style {
+      margin-right: auto; }
+      .wrapper-style .ad-container-style .slide-container-style .slide-style {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -102,17 +120,24 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%; }
-      .wrapper .ad-container-style .slide-container-style #slide-1 {
+      .wrapper-style .ad-container-style .slide-container-style #slide-1 {
         background-image: url(../assets/p1.jpg); }
-      .wrapper .ad-container-style .slide-container-style #slide-2 {
+      .wrapper-style .ad-container-style .slide-container-style #slide-2 {
         background-image: url(../assets/p2.jpg); }
-      .wrapper .ad-container-style .slide-container-style #slide-3 {
+      .wrapper-style .ad-container-style .slide-container-style #slide-3 {
         background-image: url(../assets/p3.jpg); }
-      .wrapper .ad-container-style .slide-container-style #slide-4 {
+      .wrapper-style .ad-container-style .slide-container-style #slide-4 {
         background-image: url(../assets/p4.jpg); }
-      .wrapper .ad-container-style .slide-container-style #slide-5 {
+      .wrapper-style .ad-container-style .slide-container-style #slide-5 {
         background-image: url(../assets/p5.jpg); }
-    .wrapper .ad-container-style .nav-container-style {
+    .wrapper-style .ad-container-style .slide-position-top {
+      top: 0px;
+      bottom: 0px;
+      margin-top: auto;
+      margin-bottom: auto; }
+    .wrapper-style .ad-container-style .slide-position-bottom {
+      top: 20%; }
+    .wrapper-style .ad-container-style .nav-container-style {
       position: absolute;
       width: 70%;
       left: 0px;
@@ -122,24 +147,42 @@ body {
       height: 40px;
       z-index: 1000;
       display: flex;
-      justify-content: space-evenly;
-      bottom: 200px; }
-      .wrapper .ad-container-style .nav-container-style .nav-style {
+      justify-content: space-evenly; }
+      .wrapper-style .ad-container-style .nav-container-style .nav-style {
         position: relative;
         height: 100%;
         width: 40px;
         background-color: grey;
         cursor: pointer;
         pointer-events: auto;
-        box-sizing: border-box; }
-      .wrapper .ad-container-style .nav-container-style .nav-selected-style {
-        border: 2px solid black; }
-    .wrapper .ad-container-style .button-container-style {
+        box-sizing: border-box;
+        border-radius: 20%;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat; }
+      .wrapper-style .ad-container-style .nav-container-style .nav-selected-style {
+        border: 5px solid black;
+        transition: ease 0.3s; }
+      .wrapper-style .ad-container-style .nav-container-style #nav-1 {
+        background-image: url(../assets/nav-1.jpg); }
+      .wrapper-style .ad-container-style .nav-container-style #nav-2 {
+        background-image: url(../assets/nav-2.jpg); }
+      .wrapper-style .ad-container-style .nav-container-style #nav-3 {
+        background-image: url(../assets/nav-3.jpg); }
+      .wrapper-style .ad-container-style .nav-container-style #nav-4 {
+        background-image: url(../assets/nav-4.jpg); }
+      .wrapper-style .ad-container-style .nav-container-style #nav-5 {
+        background-image: url(../assets/nav-5.jpg); }
+    .wrapper-style .ad-container-style .nav-top {
+      top: 90px; }
+    .wrapper-style .ad-container-style .nav-bottom {
+      bottom: 90px; }
+    .wrapper-style .ad-container-style .button-container-style {
       position: absolute;
       width: 100%;
-      height: 40px;
-      bottom: 100px;
-      color: white;
+      height: 30px;
+      bottom: 30px;
+      color: #606060;
       font-size: 12px;
       text-align: center;
       z-index: 200;
@@ -147,23 +190,33 @@ body {
       justify-content: space-evenly;
       line-height: 30px;
       font-family: "Proxima N W02 Smbd"; }
-      .wrapper .ad-container-style .button-container-style .ad-to-cart-style {
+      .wrapper-style .ad-container-style .button-container-style .ad-to-cart-container-style {
+        width: auto;
         position: relative;
-        width: 130px;
-        height: 30px;
-        border: 1px solid white;
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-        cursor: pointer; }
-      .wrapper .ad-container-style .button-container-style .find-store-style {
-        position: relative;
-        width: 130px;
-        height: 30px;
-        border: 1px solid white;
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-        cursor: pointer; }
+        margin-left: auto;
+        margin-right: auto; }
+        .wrapper-style .ad-container-style .button-container-style .ad-to-cart-container-style .ad-to-cart-style {
+          position: relative;
+          width: 130px;
+          height: 30px;
+          border: 1px solid #7b7b7b;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+          cursor: pointer; }
+      .wrapper-style .ad-container-style .button-container-style .find-store-container-style {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative; }
+        .wrapper-style .ad-container-style .button-container-style .find-store-container-style .find-store-style {
+          position: relative;
+          width: 130px;
+          height: 30px;
+          border: 1px solid #787878;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+          cursor: pointer; }

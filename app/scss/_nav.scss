@@ -11,7 +11,7 @@
     z-index: 1000;
     display: flex;
     justify-content: space-evenly;
-    bottom: 200px;
+   
    
 
     .nav-style {
@@ -22,9 +22,48 @@
         cursor: pointer;
 		pointer-events: auto;
 		box-sizing: border-box;
+		border-radius: 20%;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
 	}
 	
 	.nav-selected-style {
-		border: 2px solid black;
+		border: 5px solid black;
+		
+		transition: ease 0.3s;
 	}
+
+	#nav-1 {
+		// background-color: pink;
+		background-image: url(../assets/nav-1.jpg);
+	}
+
+	#nav-2 {
+		// background-color: rgb(174, 35, 59);
+		background-image: url(../assets/nav-2.jpg);
+	}
+
+	#nav-3 {
+		// background-color: rgb(130, 130, 130);
+		background-image: url(../assets/nav-3.jpg);
+	}
+
+	#nav-4 {
+		//  background-color: rgb(34, 46, 135);
+		background-image: url(../assets/nav-4.jpg);
+	}
+
+	#nav-5 {
+		// background-color: rgb(41, 130, 29);
+		background-image: url(../assets/nav-5.jpg);
+	}
+}
+
+.nav-top {
+	top: 90px;
+}
+
+.nav-bottom {
+	bottom: 90px;
 }
