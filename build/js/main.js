@@ -18,6 +18,7 @@ var ETLink =
 // -------- end of global variables
 
 
+
 // -------- ET tracking functions -----------------
 // ------------------------------------------------
 // ------------------------------------------------
@@ -152,12 +153,37 @@ if (window.device == "mobile") {
     for (var i = 1; i <= numberOfitem; i++) {
         var tempNavItem = document.getElementById("nav-" + i);
         tempNavItem.setAttribute('data-index-number', i);
-        tempNavItem.addEventListener("click",function() {updateSlide (event.target.dataset.indexNumber);})
+        tempNavItem.addEventListener("click",function() {updateSlide (event.target.dataset.indexNumber);});
+        
 
         try {
             var tempSlide = document.getElementById("slide-" + i);
             tempSlide.setAttribute('data-index-number', i);
-            tempSlide.addEventListener("click",function() {openCart (event.target.dataset.indexNumber,event.target.dataset.url);})
+            tempSlide.addEventListener("click",function() {openSlide (event.target.dataset.indexNumber,event.target.dataset.url);})
+        }
+        catch (Error) {}
+
+        try {
+            var tempHeader = document.getElementById("headline-" + i);
+            if (tempHeader.innerHTML != "") {
+                tempHeader.setAttribute('data-index-number', i);
+                tempHeader.addEventListener("click",function() {openCopy (event.target.dataset.indexNumber,event.target.dataset.url);})
+            }
+            else {
+                tempHeader.style.display = "none";
+            }
+        }
+        catch (Error) {}
+
+        try {
+            var tempSummary = document.getElementById("summary-" + i);
+            if (tempSummary.innerHTML != "") {
+                tempSummary.setAttribute('data-index-number', i);
+                tempSummary.addEventListener("click",function() {openCopy (event.target.dataset.indexNumber,event.target.dataset.url);})
+            }
+            else {
+                tempSummary.style.display = "none";
+            }
         }
         catch (Error) {}
 
@@ -170,9 +196,7 @@ if (window.device == "mobile") {
             else {
                 console.log(tempCart);
                 tempCart.style.display = "none";
-        
             }
-           
         }
         catch (Error) {}
 
@@ -202,9 +226,19 @@ if (window.device == "mobile") {
         productTracking ("product",whichOne);
     }
 
+    function openSlide (whichOne,whichURL) {
+        if (DEBUG) {console.log("index: ",whichOne, "  url: ", whichURL);}
+        clickThroughTracking ('clickURL', 'product-' + whichOne, whichURL);
+    }
+
     function openCart (whichOne,whichURL) {
         if (DEBUG) {console.log("index: ",whichOne, "  url: ", whichURL);}
         clickThroughTracking ('clickURL', 'cart-' + whichOne, whichURL);
+    }
+
+    function openCopy (whichOne,whichURL) {
+        if (DEBUG) {console.log("index: ",whichOne, "  url: ", whichURL);}
+        clickThroughTracking ('clickURL', 'messaging-' + whichOne, whichURL);
     }
 
     function openStore (whichOne,whichURL) {

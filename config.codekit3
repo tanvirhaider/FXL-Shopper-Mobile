@@ -137,16 +137,6 @@
 		"oAP": "/build/index.html",
 		"oF": 1
 		},
-	"/app/js/dfp-native-tracking.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/dfp-native-tracking-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/app/js/main.js": {
 		"ft": 64,
 		"ma": 0,
@@ -271,7 +261,7 @@
 		"oA": 0,
 		"oAP": "/build/css/main.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"/build": {

@@ -6,21 +6,32 @@
 @font-face {
   font-family: "Proxima N W01 Reg";
   src: url(https://apiadn.fonts.com/v2/fonts/subset?x=aEQPPHegxpcMofj1Jp1tYXKqiOi9p687nKTqLsOq73tJQoR0ctMtTzsiZt8wVkyywZljis6XqhTOA87xBh2gII4u354RCpSLWvyOsTpDWSwYqZebhMSWmmB1fRC4gv4mw%2bgNckgkXbWXsUdbthhC8DaHdyfU7SRnJWmmYlaPg8E%3d);
-  src: url(https://apiadn.fonts.com/v2/fonts/subset?x=aEQPPHegxpcMofj1Jp1tYXKqiOi9p687nKTqLsOq73tJQoR0ctMtTzsiZt8wVkyywZljis6XqhTOA87xBh2gII4u354RCpSLWvyOsTpDWSwYqZebhMSWmmB1fRC4gv4mw%2bgNckgkXbWXsUdbthhC8DaHdyfU7SRnJWmmYlaPg8E%3d#iefix) format("eot"), url(https://apiadn.fonts.com/v2/fonts/subset?x=bnlTGL%2flyERMvMB5KGT1XBXveOQr4%2f%2bsI8BXrDMbjKe%2fF%2fL%2bj0ydN4duUIuaJlKXIIeTW0CRI%2fxdcolu2oF2vGuxRdnwi3evMn0sJDUojwrNdOaEOnIGgnsirqykyQ5WF7nSFsayiEBjIUQedsS%2ftSfTxGgByozSb5GNszYPHG8%3d) format("woff2"), url(https://apiadn.fonts.com/v2/fonts/subset?x=7lOozVx17sBSzsSHZRAsBC1QzJejLKkoqlkZJJA7s5wDJrO6eUaNgLBUCc3UDRmiWlHxWEy%2bHKcjWobUn06eTgU7LoeE7jT8pPX35hzyd2hUVGY3c%2fV7UCJBagiDRKvps9xb6oxPVgoBNrCrFuuDCGuYWsPDI0cUA7DsHslAy6o%3d) format("woff"), url(https://apiadn.fonts.com/v2/fonts/subset?x=YdU1Gas3Kn1GLOFex%2fIYiPq%2fAYSzutipKMkVmBE2Aiv46sUG8HgSPatrkyifHCf7eJaVv1qkqX6BQCC8Sq3HcRN2tMuoqzgXV%2bBJ4wTSScRK9XVKhCeDCO2TGwwWiHBWJmJxF7X0timAIhkGq8v%2bDQvO02r3FUEnxmQpNDF0w%2fQ%3d) format("truetype"); }
+  src: url(https://apiadn.fonts.com/v2/fonts/subset?x=aEQPPHegxpcMofj1Jp1tYXKqiOi9p687nKTqLsOq73tJQoR0ctMtTzsiZt8wVkyywZljis6XqhTOA87xBh2gII4u354RCpSLWvyOsTpDWSwYqZebhMSWmmB1fRC4gv4mw%2bgNckgkXbWXsUdbthhC8DaHdyfU7SRnJWmmYlaPg8E%3d#iefix) format("eot"), url(https://apiadn.fonts.com/v2/fonts/subset?x=bnlTGL%2flyERMvMB5KGT1XBXveOQr4%2f%2bsI8BXrDMbjKe%2fF%2fL%2bj0ydN4duUIuaJlKXIIeTW0CRI%2fxdcolu2oF2vGuxRdnwi3evMn0sJDUojwrNdOaEOnIGgnsirqykyQ5WF7nSFsayiEBjIUQedsS%2ftSfTxGgByozSb5GNszYPHG8%3d) format("woff2"), url(https://apiadn.fonts.com/v2/fonts/subset?x=7lOozVx17sBSzsSHZRAsBC1QzJejLKkoqlkZJJA7s5wDJrO6eUaNgLBUCc3UDRmiWlHxWEy%2bHKcjWobUn06eTgU7LoeE7jT8pPX35hzyd2hUVGY3c%2fV7UCJBagiDRKvps9xb6oxPVgoBNrCrFuuDCGuYWsPDI0cUA7DsHslAy6o%3d) format("woff"), url(https://apiadn.fonts.com/v2/fonts/subset?x=YdU1Gas3Kn1GLOFex%2fIYiPq%2fAYSzutipKMkVmBE2Aiv46sUG8HgSPatrkyifHCf7eJaVv1qkqX6BQCC8Sq3HcRN2tMuoqzgXV%2bBJ4wTSScRK9XVKhCeDCO2TGwwWiHBWJmJxF7X0timAIhkGq8v%2bDQvO02r3FUEnxmQpNDF0w%2fQ%3d) format("truetype");
+}
 
 @font-face {
   font-family: "Proxima N W02 Bold";
   src: url(https://apiadn.fonts.com/v2/fonts/subset?x=3m9sZXQqzMRmVlycd6e8QzKwa6vl4y002J4aBR1aKDSyu2Ocz0RsIiawLUEx5xq56KII8cd2WTai5kabaKAkw7oG4uv9a6fJ1gv533XGp3H9kzQik0Je2ND%2fvD%2bZVkl6kETg4NsfrV4NHWrsLDP5hiiYHLMFm2k3GpQboFeQcmU%3d);
-  src: url(https://apiadn.fonts.com/v2/fonts/subset?x=3m9sZXQqzMRmVlycd6e8QzKwa6vl4y002J4aBR1aKDSyu2Ocz0RsIiawLUEx5xq56KII8cd2WTai5kabaKAkw7oG4uv9a6fJ1gv533XGp3H9kzQik0Je2ND%2fvD%2bZVkl6kETg4NsfrV4NHWrsLDP5hiiYHLMFm2k3GpQboFeQcmU%3d#iefix) format("eot"), url(https://apiadn.fonts.com/v2/fonts/subset?x=1jA8a6kaT0NuM7%2bf3PrZlFxldvUathMnC%2f592lbImbxX%2bOOLy907FNTWTVYORp7aeZJX%2btakG%2f%2fq0iQx0DcUwTKZzUUBh4qngYv0%2fYfQFtZIqulpn%2bAo3nzeRj06oxR0Q%2fkhqK4Bf9x9V2Op18nDmDRhuvxT3Q1IZdk1FjfIpQk%3d) format("woff2"), url(https://apiadn.fonts.com/v2/fonts/subset?x=nzdUhcdHlj0pVBSBB89zTJ0%2fCPooMF5f5g8qZykOr91eS1u37i6ARGaTPm%2fj5Cq1AH6duCKKlhibgGZWaf3NzJ6jHFPFziUNo4fjXJqpJpRncwALwwvDbYPsJPEE9QGFigqBAmcOr8ev2E6jZZw7sIhuxg6xhyrf16kPX0b4jVY%3d) format("woff"), url(https://apiadn.fonts.com/v2/fonts/subset?x=KPD8T4ogq%2bRh4h2g11CLb%2b3Y%2fhJq8zFkyeIAzOe5sxmw1hm1gPgZXzeSGjeaBYPzKsAN4x9wHKYrI1EARYHn7zFO1EMrgMI%2fgV0BmmzJWxR2ILwhNs1lt%2b2Oyh1tFejS8rPCR5IjRxz8MOrmgtX3MV%2bK1RsAj0G3VrVZ2BEh9As%3d) format("truetype"); }
+  src: url(https://apiadn.fonts.com/v2/fonts/subset?x=3m9sZXQqzMRmVlycd6e8QzKwa6vl4y002J4aBR1aKDSyu2Ocz0RsIiawLUEx5xq56KII8cd2WTai5kabaKAkw7oG4uv9a6fJ1gv533XGp3H9kzQik0Je2ND%2fvD%2bZVkl6kETg4NsfrV4NHWrsLDP5hiiYHLMFm2k3GpQboFeQcmU%3d#iefix) format("eot"), url(https://apiadn.fonts.com/v2/fonts/subset?x=1jA8a6kaT0NuM7%2bf3PrZlFxldvUathMnC%2f592lbImbxX%2bOOLy907FNTWTVYORp7aeZJX%2btakG%2f%2fq0iQx0DcUwTKZzUUBh4qngYv0%2fYfQFtZIqulpn%2bAo3nzeRj06oxR0Q%2fkhqK4Bf9x9V2Op18nDmDRhuvxT3Q1IZdk1FjfIpQk%3d) format("woff2"), url(https://apiadn.fonts.com/v2/fonts/subset?x=nzdUhcdHlj0pVBSBB89zTJ0%2fCPooMF5f5g8qZykOr91eS1u37i6ARGaTPm%2fj5Cq1AH6duCKKlhibgGZWaf3NzJ6jHFPFziUNo4fjXJqpJpRncwALwwvDbYPsJPEE9QGFigqBAmcOr8ev2E6jZZw7sIhuxg6xhyrf16kPX0b4jVY%3d) format("woff"), url(https://apiadn.fonts.com/v2/fonts/subset?x=KPD8T4ogq%2bRh4h2g11CLb%2b3Y%2fhJq8zFkyeIAzOe5sxmw1hm1gPgZXzeSGjeaBYPzKsAN4x9wHKYrI1EARYHn7zFO1EMrgMI%2fgV0BmmzJWxR2ILwhNs1lt%2b2Oyh1tFejS8rPCR5IjRxz8MOrmgtX3MV%2bK1RsAj0G3VrVZ2BEh9As%3d) format("truetype");
+}
 
 @font-face {
   font-family: "Proxima N W02 Smbd";
   src: url(https://apiadn.fonts.com/v2/fonts/subset?x=wt0z0ND%2fdjdWsmIUOO6vXq1qtPwCMYyUOGnyXvVBJ4eB%2f4iajAbNUvXJ13ifoOJCpMq28VCdpA1IcuurYjN5h9gemMTpvwhW8JlYNvNvdwyxpA1JJhvIgSEntpbeP9ydHsDLNL5lzqf5Wm3dURpTnx5ZFNVlS7%2bUCdOXz9WA84k%3d);
-  src: url(https://apiadn.fonts.com/v2/fonts/subset?x=wt0z0ND%2fdjdWsmIUOO6vXq1qtPwCMYyUOGnyXvVBJ4eB%2f4iajAbNUvXJ13ifoOJCpMq28VCdpA1IcuurYjN5h9gemMTpvwhW8JlYNvNvdwyxpA1JJhvIgSEntpbeP9ydHsDLNL5lzqf5Wm3dURpTnx5ZFNVlS7%2bUCdOXz9WA84k%3d#iefix) format("eot"), url(https://apiadn.fonts.com/v2/fonts/subset?x=u0tNb2sdJWaRi%2b4hqjxTTzB%2f8nmJQt%2fEcqOKtiV67VzasOTDgXCQ28zU9bRO5OVdCaAk7C5I8f7deeHeQaJVF%2fiWMjvuE%2bKVdtojR4VDuYjlNLbN3In%2beBBhYbXSyKtrOmnyG6lk2KMvgTYJ24bq1WHVqYmVb7FoOeD7I1LfGrw%3d) format("woff2"), url(https://apiadn.fonts.com/v2/fonts/subset?x=cXybx6EtjJgxMPFEs3rQmqRA6uTaSI2YrmI6040oS2qN3%2b6%2fhJvSMeO9IdbyhhWh5%2btjwBBYmxHZJCBx4ssg5FYCsr4WWtTWolGFbA6L%2fEqNXJrOnLSidhERjEKmkDvjHlA1Tx87zuqlLhgpEradmeTJ6bY0TXQ6IdTxR3vu6p4%3d) format("woff"), url(https://apiadn.fonts.com/v2/fonts/subset?x=PJsSGUv6%2fUtao1%2bt4ykLCOIhXuvQSsoAfnsxkh0ro3loHePTLvUYqPRKrFAo4DvV9MfRfkMbBmM4UVJ%2fGv8BmGAVOLM8GaKUG%2fKGKiKx5NzZItP1NM9na%2bxyBpSQlZl9LZ75ZLApPwXorbxxMQk6GOW%2fp3qGn6Nee0Cbu1kyhDg%3d) format("truetype"); }
+  src: url(https://apiadn.fonts.com/v2/fonts/subset?x=wt0z0ND%2fdjdWsmIUOO6vXq1qtPwCMYyUOGnyXvVBJ4eB%2f4iajAbNUvXJ13ifoOJCpMq28VCdpA1IcuurYjN5h9gemMTpvwhW8JlYNvNvdwyxpA1JJhvIgSEntpbeP9ydHsDLNL5lzqf5Wm3dURpTnx5ZFNVlS7%2bUCdOXz9WA84k%3d#iefix) format("eot"), url(https://apiadn.fonts.com/v2/fonts/subset?x=u0tNb2sdJWaRi%2b4hqjxTTzB%2f8nmJQt%2fEcqOKtiV67VzasOTDgXCQ28zU9bRO5OVdCaAk7C5I8f7deeHeQaJVF%2fiWMjvuE%2bKVdtojR4VDuYjlNLbN3In%2beBBhYbXSyKtrOmnyG6lk2KMvgTYJ24bq1WHVqYmVb7FoOeD7I1LfGrw%3d) format("woff2"), url(https://apiadn.fonts.com/v2/fonts/subset?x=cXybx6EtjJgxMPFEs3rQmqRA6uTaSI2YrmI6040oS2qN3%2b6%2fhJvSMeO9IdbyhhWh5%2btjwBBYmxHZJCBx4ssg5FYCsr4WWtTWolGFbA6L%2fEqNXJrOnLSidhERjEKmkDvjHlA1Tx87zuqlLhgpEradmeTJ6bY0TXQ6IdTxR3vu6p4%3d) format("woff"), url(https://apiadn.fonts.com/v2/fonts/subset?x=PJsSGUv6%2fUtao1%2bt4ykLCOIhXuvQSsoAfnsxkh0ro3loHePTLvUYqPRKrFAo4DvV9MfRfkMbBmM4UVJ%2fGv8BmGAVOLM8GaKUG%2fKGKiKx5NzZItP1NM9na%2bxyBpSQlZl9LZ75ZLApPwXorbxxMQk6GOW%2fp3qGn6Nee0Cbu1kyhDg%3d) format("truetype");
+}
 
 body {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  min-height: 600px;
+  max-height: 824px;
+  min-width: 320px;
+  max-width: 420px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
 .wrapper-style {
   position: absolute;
@@ -31,190 +42,265 @@ body {
   left: 0px;
   right: 0px;
   margin-left: auto;
-  margin-right: auto; }
-  .wrapper-style .ad-container-style {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: 1px solid black; }
-    .wrapper-style .ad-container-style .background-style {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: 50% 50%;
-      background-color: white; }
-    .wrapper-style .ad-container-style .gradient-style {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.2) 100%);
-      pointer-events: none;
-      z-index: 1000; }
-    .wrapper-style .ad-container-style .logo-style {
-      position: absolute;
-      width: 100%;
-      height: 45px;
-      background-image: url(../assets/logo.png);
-      background-position: 50% 50%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      z-index: 2000;
-      top: 20px;
-      left: 0px;
-      cursor: pointer; }
-    .wrapper-style .ad-container-style .copy-container-style {
-      color: #3f3f3f;
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      pointer-events: none; }
-      .wrapper-style .ad-container-style .copy-container-style .headline-container-style {
-        position: relative;
-        font-family: "Proxima N W02 Bold";
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 18px; }
-      .wrapper-style .ad-container-style .copy-container-style .summary-container-style {
-        position: relative;
-        font-family: "Proxima N W01 Reg";
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 14px; }
-    .wrapper-style .ad-container-style .copy-position-top {
-      bottom: 100px; }
-    .wrapper-style .ad-container-style .copy-position-bottom {
-      bottom: 170px; }
-    .wrapper-style .ad-container-style .slide-container-style {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      box-sizing: border-box;
-      max-width: 300px;
-      max-height: 300px;
-      left: 0px;
-      right: 0px;
-      margin-left: auto;
-      margin-right: auto; }
-      .wrapper-style .ad-container-style .slide-container-style .slide-style {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        cursor: pointer;
-        pointer-events: auto;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 50%; }
-      .wrapper-style .ad-container-style .slide-container-style #slide-1 {
-        background-image: url(../assets/p1.jpg); }
-      .wrapper-style .ad-container-style .slide-container-style #slide-2 {
-        background-image: url(../assets/p2.jpg); }
-      .wrapper-style .ad-container-style .slide-container-style #slide-3 {
-        background-image: url(../assets/p3.jpg); }
-      .wrapper-style .ad-container-style .slide-container-style #slide-4 {
-        background-image: url(../assets/p4.jpg); }
-      .wrapper-style .ad-container-style .slide-container-style #slide-5 {
-        background-image: url(../assets/p5.jpg); }
-    .wrapper-style .ad-container-style .slide-position-top {
-      top: 0px;
-      bottom: 0px;
-      margin-top: auto;
-      margin-bottom: auto; }
-    .wrapper-style .ad-container-style .slide-position-bottom {
-      top: 20%; }
-    .wrapper-style .ad-container-style .nav-container-style {
-      position: absolute;
-      width: 70%;
-      left: 0px;
-      right: 0px;
-      margin-left: auto;
-      margin-right: auto;
-      height: 40px;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-evenly; }
-      .wrapper-style .ad-container-style .nav-container-style .nav-style {
-        position: relative;
-        height: 100%;
-        width: 40px;
-        background-color: grey;
-        cursor: pointer;
-        pointer-events: auto;
-        box-sizing: border-box;
-        border-radius: 20%;
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat; }
-      .wrapper-style .ad-container-style .nav-container-style .nav-selected-style {
-        border: 5px solid black;
-        transition: ease 0.3s; }
-      .wrapper-style .ad-container-style .nav-container-style #nav-1 {
-        background-image: url(../assets/nav-1.jpg); }
-      .wrapper-style .ad-container-style .nav-container-style #nav-2 {
-        background-image: url(../assets/nav-2.jpg); }
-      .wrapper-style .ad-container-style .nav-container-style #nav-3 {
-        background-image: url(../assets/nav-3.jpg); }
-      .wrapper-style .ad-container-style .nav-container-style #nav-4 {
-        background-image: url(../assets/nav-4.jpg); }
-      .wrapper-style .ad-container-style .nav-container-style #nav-5 {
-        background-image: url(../assets/nav-5.jpg); }
-    .wrapper-style .ad-container-style .nav-top {
-      top: 90px; }
-    .wrapper-style .ad-container-style .nav-bottom {
-      bottom: 90px; }
-    .wrapper-style .ad-container-style .button-container-style {
-      position: absolute;
-      width: 100%;
-      height: 35px;
-      bottom: 30px;
-      color: #606060;
-      z-index: 200;
-      display: flex;
-      justify-content: space-evenly; }
-      .wrapper-style .ad-container-style .button-container-style .button-set-style {
-        display: flex;
-        line-height: 30px;
-        font-family: "Proxima N W02 Smbd";
-        font-size: 12px;
-        text-align: center; }
-        .wrapper-style .ad-container-style .button-container-style .button-set-style .ad-to-cart-style {
-          position: relative;
-          width: auto;
-          height: auto;
-          border: 1px solid #7b7b7b;
-          -webkit-user-select: none;
-             -moz-user-select: none;
-              -ms-user-select: none;
-                  user-select: none;
-          cursor: pointer;
-          padding: 2px 20px;
-          margin-left: 10px;
-          margin-right: 10px; }
-        .wrapper-style .ad-container-style .button-container-style .button-set-style .find-store-style {
-          position: relative;
-          width: auto;
-          height: auto;
-          border: 1px solid #787878;
-          -webkit-user-select: none;
-             -moz-user-select: none;
-              -ms-user-select: none;
-                  user-select: none;
-          cursor: pointer;
-          padding: 2px 20px;
-          margin-left: 10px;
-          margin-right: 10px; }
+  margin-right: auto;
+}
+
+.wrapper-style .ad-container-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.wrapper-style .ad-container-style .background-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: white;
+}
+
+.wrapper-style .ad-container-style .gradient-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.2) 100%);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.wrapper-style .ad-container-style .logo-style {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  background-image: url(../assets/logo.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2000;
+  top: 20px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.wrapper-style .ad-container-style .copy-container-style {
+  color: #3f3f3f;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.wrapper-style .ad-container-style .copy-container-style .headline-container-style {
+  position: relative;
+  font-family: "Proxima N W02 Bold";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.wrapper-style .ad-container-style .copy-container-style .summary-container-style {
+  position: relative;
+  font-family: "Proxima N W01 Reg";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  pointer-events: auto;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.wrapper-style .ad-container-style .copy-position-top {
+  bottom: 100px;
+}
+
+.wrapper-style .ad-container-style .copy-position-bottom {
+  bottom: 170px;
+}
+
+.wrapper-style .ad-container-style .slide-container-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 300px;
+  max-height: 300px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-style .ad-container-style .slide-container-style .slide-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  pointer-events: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.wrapper-style .ad-container-style .slide-container-style #slide-1 {
+  background-image: url(../assets/p1.jpg);
+}
+
+.wrapper-style .ad-container-style .slide-container-style #slide-2 {
+  background-image: url(../assets/p2.jpg);
+}
+
+.wrapper-style .ad-container-style .slide-container-style #slide-3 {
+  background-image: url(../assets/p3.jpg);
+}
+
+.wrapper-style .ad-container-style .slide-container-style #slide-4 {
+  background-image: url(../assets/p4.jpg);
+}
+
+.wrapper-style .ad-container-style .slide-container-style #slide-5 {
+  background-image: url(../assets/p5.jpg);
+}
+
+.wrapper-style .ad-container-style .slide-position-top {
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.wrapper-style .ad-container-style .slide-position-bottom {
+  top: 20%;
+}
+
+.wrapper-style .ad-container-style .nav-container-style {
+  position: absolute;
+  width: 70%;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper-style .ad-container-style .nav-container-style .nav-style {
+  position: relative;
+  height: 100%;
+  width: 40px;
+  background-color: grey;
+  cursor: pointer;
+  pointer-events: auto;
+  box-sizing: border-box;
+  border-radius: 20%;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+
+.wrapper-style .ad-container-style .nav-container-style .nav-selected-style {
+  border: 5px solid black;
+  transition: ease 0.3s;
+}
+
+.wrapper-style .ad-container-style .nav-container-style #nav-1 {
+  background-color: pink;
+  background-image: url(../assets/nav-1.jpg);
+}
+
+.wrapper-style .ad-container-style .nav-container-style #nav-2 {
+  background-color: #ae233b;
+  background-image: url(../assets/nav-2.jpg);
+}
+
+.wrapper-style .ad-container-style .nav-container-style #nav-3 {
+  background-color: #828282;
+  background-image: url(../assets/nav-3.jpg);
+}
+
+.wrapper-style .ad-container-style .nav-container-style #nav-4 {
+  background-color: #222e87;
+  background-image: url(../assets/nav-4.jpg);
+}
+
+.wrapper-style .ad-container-style .nav-container-style #nav-5 {
+  background-color: #29821d;
+  background-image: url(../assets/nav-5.jpg);
+}
+
+.wrapper-style .ad-container-style .nav-top {
+  top: 90px;
+}
+
+.wrapper-style .ad-container-style .nav-bottom {
+  bottom: 90px;
+}
+
+.wrapper-style .ad-container-style .button-container-style {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  bottom: 30px;
+  color: #606060;
+  z-index: 200;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper-style .ad-container-style .button-container-style .button-set-style {
+  display: flex;
+  line-height: 30px;
+  font-family: "Proxima N W02 Smbd";
+  font-size: 12px;
+  text-align: center;
+}
+
+.wrapper-style .ad-container-style .button-container-style .button-set-style .ad-to-cart-style {
+  position: relative;
+  width: auto;
+  height: auto;
+  border: 1px solid #7b7b7b;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  padding: 2px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wrapper-style .ad-container-style .button-container-style .button-set-style .find-store-style {
+  position: relative;
+  width: auto;
+  height: auto;
+  border: 1px solid #787878;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  padding: 2px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

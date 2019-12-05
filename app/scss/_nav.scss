@@ -23,9 +23,9 @@
 		pointer-events: auto;
 		box-sizing: border-box;
 		border-radius: 20%;
-		background-size: cover;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
+		background-size: cover !important;
+		background-position: 50% 50% !important;
+		background-repeat: no-repeat !important;
 	}
 	
 	.nav-selected-style {
@@ -35,27 +35,27 @@
 	}
 
 	#nav-1 {
-		// background-color: pink;
+		background-color: pink;
 		background-image: url(../assets/nav-1.jpg);
 	}
 
 	#nav-2 {
-		// background-color: rgb(174, 35, 59);
+		background-color: rgb(174, 35, 59);
 		background-image: url(../assets/nav-2.jpg);
 	}
 
 	#nav-3 {
-		// background-color: rgb(130, 130, 130);
+		background-color: rgb(130, 130, 130);
 		background-image: url(../assets/nav-3.jpg);
 	}
 
 	#nav-4 {
-		//  background-color: rgb(34, 46, 135);
+		background-color: rgb(34, 46, 135);
 		background-image: url(../assets/nav-4.jpg);
 	}
 
 	#nav-5 {
-		// background-color: rgb(41, 130, 29);
+		background-color: rgb(41, 130, 29);
 		background-image: url(../assets/nav-5.jpg);
 	}
 }
